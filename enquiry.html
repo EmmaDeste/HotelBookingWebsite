@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<htmllang="fr">
+	
+<head>
+    <meta charset="utf-8">
+    <title> Enquiry page </title>
+    <link rel="stylesheet" href="styleNode.css"> 
+</head>
+
+<body id="Enquiry">
+
+<header>
+			<!-- add a navigation bar, as the header of each page -->
+		   	<nav> 
+				<!-- logo of the hotel -->
+			   <img id="logo" src="./assets/logo.jpg"> 
+
+			   <!--  Menu of the navigation bar, constituted of the links to the other pages-->
+			   <ul class="menu"> 
+					   <li> <a href="home.html"> HOME </a> </li>
+					   <li> <a href="rooms.html"> ROOMS </a> </li>
+					   <li> <a href="booking.html"> BOOKING </a> </li>
+					   <li> <a href="restaurant.html"> RESTAURANT </a> </li>
+					   <li> <a href="about.html"> ABOUT </a> </li>
+					   <li> <a href="enquiry.html"> ENQUIRIES </a> </li>
+					   <li> <a href="feedbacks.html"> FEEDBACKS </a> </li>
+					   <li> <a href="contact.html"> CONTACT </a> </li>
+				   </ul>
+				   <br><br>
+				   <ul> 
+						<!-- Scolling bar to select -->
+					   <li class="roll"> ACCOUNT <img id="user" src="./assets/user.png">
+						   <!-- Options -->
+						   <ul class="options"> 
+							   <li id="log"> Log in </li>
+							   <li id="reg"> Register </li>
+						   </ul> 
+					   </li>
+				   </ul>
+			   </nav> 
+	   </header>
+	   
+<!-- Indicate the purpose of the page -->
+		<h1 id="title"> Let us know your enquiries </h1>
+        <br> 
+            
+        <form class="review-form"> <!-- Create a form to get complains from the clients-->
+             <h3 id="title3"> Your coordinates: </h3>
+            <br>
+            <label for="name"> Enter your Name: </label>
+            <input v-model="name"> 
+            <br><br>
+            <label for="password"> Password: </label> <!-- Indicates the instruction of what to enter -->
+            <input v-model="password">  <!-- Input field so that the user can type his password -->
+
+            <br><br><br>
+
+            <h3 id="title3"> Details of the booking: </h3>
+            <br>
+            <label for="checkinD"> Enter your Check-in date: </label>
+            <input v-model="checkinD"> 
+            <br><br>
+            <label for="checkoutD"> Check-out date: </label>
+            <input v-model="checkoutD"> 
+
+            <br><br>
+
+            <h3 id="title3"> Type of enquiry: </h3>
+            <br>
+            <label for="enqui"></label>
+			<!-- Options to select using radiobuttons: type of enquity here -->
+			<!-- only one can be clicked at a time -->
+             <select v-model="enqui">
+                <option> Billing </option>
+                <option> Your stay </option>
+                <option> The services </option>
+                <option> Other </option>
+            </select>
+
+            <br><br>
+
+        	<h3 id="title3"> Leave your message: </h3>
+            <br>
+            <label for="comment"></label>
+            <input v-model="comment"> 
+                            
+		</form>
+            
+        <br>
+
+		<!-- Add a SUBMIT button - calls the corresponding function -->
+        <button type="submit" class="submitButton" value="Submit"> SUBMIT </button>
+            
+        <br><br><br>
+
+		<!-- Textareato display the review - consider each attribute of the review and display them -->
+        <div readonly id="review_container" v-for="item in reviews">
+			<!-- Display the {{review's attribute}} in the textarea -->
+            <b1> this.name </b1> came on <b2> this.checkinD </b2> and left on <b2> this.checkoutD </b2>
+            had troubles regarding <b3> this.comment </b3>
+        </div>
+
+        <br> <br> 
+
+		<br><br>
+		   
+	   <br> <br> <br>
+    
+		<footer>
+			<!-- indicate our social medias, as the footer of each page -->
+			<br>
+			<p> <b> Follow us: </b> </p>
+			<br>
+
+			<!-- table listing the different social medias, taking the logos from the assets folder -->
+			<table class="socialm"> 
+				<tr> 
+					<td> <img id="fb" src="./assets/facebook.png">  </td>
+					<td id="fb"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="insta" src="./assets/instagram.png">  </td>
+					<td id="insta"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="in" src="./assets/LinkedIn.png">  </td>
+					<td id="in"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="snap" src="./assets/snapchat.png">  </td>
+					<td id="snap"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="tw" src="./assets/twitter.png"> </td>
+					<td id="tw"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="yt" src="./assets/youtube.png"> </td>
+					<td id="yt"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="tk" src="./assets/TikTok.png"> </td>
+					<td id="tk"> EMAhotel </td>
+				</tr>
+			</table>
+		</footer>
+
+	
+</body>
+</html>

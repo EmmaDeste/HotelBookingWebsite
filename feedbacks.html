@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<htmllang="fr">
+	
+<head>
+    <meta charset="utf-8">
+    <title> Feedbacks page </title>
+    <link rel="stylesheet" href="styleNode.css"> 
+</head>
+
+<body id="Feedbacks">
+
+	<header>
+			<!-- add a navigation bar, as the header of each page -->
+		   	<nav> 
+				<!-- logo of the hotel -->
+			   <img id="logo" src="./assets/logo.jpg"> 
+
+			   <!--  Menu of the navigation bar, constituted of the links to the other pages-->
+			   <ul class="menu"> 
+					   <li> <a href="home.html"> HOME </a> </li>
+					   <li> <a href="rooms.html"> ROOMS </a> </li>
+					   <li> <a href="booking.html"> BOOKING </a> </li>
+					   <li> <a href="restaurant.html"> RESTAURANT </a> </li>
+					   <li> <a href="about.html"> ABOUT </a> </li>
+					   <li> <a href="enquiry.html"> ENQUIRIES </a> </li>
+					   <li> <a href="feedbacks.html"> FEEDBACKS </a> </li>
+					   <li> <a href="contact.html"> CONTACT </a> </li>
+				   </ul>
+				   <br><br>
+				   <ul> 
+						<!-- Scolling bar to select -->
+					   <li class="roll"> ACCOUNT <img id="user" src="./assets/user.png">
+						   <!-- Options -->
+						   <ul class="options"> 
+							   <li id="log"> Log in </li>
+							   <li id="reg"> Register </li>
+						   </ul> 
+					   </li>
+				   </ul>
+			   </nav> 
+	   </header>
+	   
+		<!-- Indicate the purpose of the page: Have clients' feedbacks -->
+    <h1 id="title"> Tell us about your experience </h1>
+
+	<br><br>
+
+	<form> <!-- Create a form easy and quick to fill -->
+
+		<h2 id="title3"> Rate the following aspects </h2>
+		<br><br>
+		<!-- Specify the topic: Check-in -->
+		<p id="opt"> Check-in </p>
+		<!-- Options to select using radiobuttons: 1 to 5 stars here -->
+		<div class="rate">
+			<input type="radio" id="star5" name="rate" value="5" />
+			<label for="star5" title="text">5 stars</label>
+			<input type="radio" id="star4" name="rate" value="4" />
+			<label for="star4" title="text">4 stars</label>
+			<input type="radio" id="star3" name="rate" value="3" />
+			<label for="star3" title="text">3 stars</label>
+			<input type="radio" id="star2" name="rate" value="2" />
+			<label for="star2" title="text">2 stars</label>
+			<input type="radio" id="star1" name="rate" value="1" />
+			<label for="star1" title="text">1 star</label>
+		</div>
+
+		<br><br><br><br>
+
+		<!-- Specify the topic: Cleaning -->
+		<p id="opt"> Housekeeping and Cleanliness </p>
+		<!-- Options to select using radiobuttons: 1 to 5 stars here -->
+		<div class="rate">
+			<input type="radio" id="star5_2" name="rate_2" value="5" />
+			<label for="star5_2" title="text">5 stars</label>
+			<input type="radio" id="star4_2" name="rate_2" value="4" />
+			<label for="star4_2" title="text">4 stars</label>
+			<input type="radio" id="star3_2" name="rate_2" value="3" />
+			<label for="star3_2" title="text">3 stars</label>
+			<input type="radio" id="star2_2" name="rate_2" value="2" />
+			<label for="star2_2" title="text">2 stars</label>
+			<input type="radio" id="star1_2" name="rate_2" value="1" />
+			<label for="star1_2" title="text">1 star</label>
+		</div>
+
+		<br><br><br><br>
+
+		<!-- Specify the topic: Staff -->
+		<p id="opt"> Friendly and Efficient staff </p>
+		<!-- Options to select using radiobuttons: 1 to 5 stars here -->
+		<div class="rate">
+			<input type="radio" id="star5_3" name="rate_3" value="5" />
+			<label for="star5_3" title="text">5 stars</label>
+			<input type="radio" id="star4_3" name="rate_3" value="4" />
+			<label for="star4_3" title="text">4 stars</label>
+			<input type="radio" id="star3_3" name="rate_3" value="3" />
+			<label for="star3_3" title="text">3 stars</label>
+			<input type="radio" id="star2_3" name="rate_3" value="2" />
+			<label for="star2_3" title="text">2 stars</label>
+			<input type="radio" id="star1_3" name="rate_3" value="1" />
+			<label for="star1_3" title="text">1 star</label>
+		</div>
+
+		<br><br><br><br>
+
+		<!-- Specify the topic: Services -->
+		<p id="opt"> Services overall quality </p>
+		<!-- Options to select using radiobuttons: 1 to 5 stars here -->
+		<div class="rate">
+			<input type="radio" id="star5_4" name="rate_4" value="5" />
+			<label for="star5_4" title="text">5 stars</label>
+			<input type="radio" id="star4_4" name="rate_4" value="4" />
+			<label for="star4_4" title="text">4 stars</label>
+			<input type="radio" id="star3_4" name="rate_4" value="3" />
+			<label for="star3_4" title="text">3 stars</label>
+			<input type="radio" id="star2_4" name="rate_4" value="2" />
+			<label for="star2_4" title="text">2 stars</label>
+			<input type="radio" id="star1_4" name="rate_4" value="1" />
+			<label for="star1_4" title="text">1 star</label>
+		</div>
+
+		<br><br><br><br><br>
+
+		<!-- Ask a question to the user about: his Stay -->
+		<p id="question"> Did you enjoy your stay at EMA? </p>
+		<br>
+		<!-- Options to select using radiobuttons: level of satisfaction here -->
+		<input type="radio" class="centerOptions" value="satisfied">
+		<label for="satisfied"> Satisfied </label><br>
+		<input type="radio" class="centerOptions" value="soso">
+		<label for="nots"> Could have been better </label><br>
+		<input type="radio" class="centerOptions" value="nots">
+		<label for="nots"> Not satisfied </label><br>
+
+		<br>  
+
+		<!-- Ask a question to the user about: the Restaurant -->
+		<p id="question"> What about our gastronomy at the restaurant? </p>
+		<br>
+		<!-- Options to select using radiobuttons: level of satisfaction here -->
+		<input type="radio" class="centerOptions" value="satisfied">
+		<label for="satisfied"> Satisfied </label><br>
+		<input type="radio" class="centerOptions" value="soso">
+		<label for="nots"> Can be improved </label><br>
+		<input type="radio" class="centerOptions" value="nots">
+		<label for="nots"> Not satisfied </label><br>
+
+		<br>  
+
+		<!-- Ask a question to the user about: the Recommendation to others -->
+		<p id="question"> Would you recommend us to a friend? </p>
+		<br>
+		<!-- Options to select using radiobuttons: communication here -->
+		<input type="radio" class="centerOptions" value="yes">
+		<label for="yes"> Yes </label><br>
+		<input type="radio" class="centerOptions" value="idk">
+		<label for="idk"> I don't know </label><br>
+		<input type="radio" class="centerOptions" value="no">
+		<label for="no"> No </label><br>
+
+		<br> 
+
+		<!-- Ask a question to the user about: their Comeback -->
+		<p id="question"> What about visiting us soon? </p>
+		<br>
+		<!-- Options to select using radiobuttons: level of satisfaction here -->
+		<input type="radio" class="centerOptions" value="100">
+		<label for="100"> I will definitely come back </label><br>
+		<input type="radio" class="centerOptions" value="70">
+		<label for="70"> I am open to it </label><br>  
+		<input type="radio" class="centerOptions" value="40">
+		<label for="40"> I'm not into it </label><br>
+		<input type="radio" class="centerOptions" value="0">
+		<label for="0"> I will never come back </label><br><br>
+
+		<br><br>
+		
+		<!-- Submit button to send the feedback, and blank the space for others -->
+		<input type="submit" class="submitButton" value="SUBMIT">
+	</form>
+
+    <br>
+
+		<br><br>
+		   
+	   <br> <br> <br>
+    
+		<footer>
+			<!-- indicate our social medias, as the footer of each page -->
+			<br>
+			<p> <b> Follow us: </b> </p>
+			<br>
+
+			<!-- table listing the different social medias, taking the logos from the assets folder -->
+			<table class="socialm"> 
+				<tr> 
+					<td> <img id="fb" src="./assets/facebook.png">  </td>
+					<td id="fb"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="insta" src="./assets/instagram.png">  </td>
+					<td id="insta"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="in" src="./assets/LinkedIn.png">  </td>
+					<td id="in"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="snap" src="./assets/snapchat.png">  </td>
+					<td id="snap"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="tw" src="./assets/twitter.png"> </td>
+					<td id="tw"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="yt" src="./assets/youtube.png"> </td>
+					<td id="yt"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="tk" src="./assets/TikTok.png"> </td>
+					<td id="tk"> EMAhotel </td>
+				</tr>
+			</table>
+		</footer>
+
+	
+</body>
+</html>

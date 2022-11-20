@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<htmllang="fr">
+	
+<head>
+    <meta charset="utf-8">
+    <title> Rooms page </title>
+    <link rel="stylesheet" href="styleNode.css"> 
+</head>
+
+<body>
+
+<header>
+			<!-- add a navigation bar, as the header of each page -->
+		   	<nav> 
+				<!-- logo of the hotel -->
+			   <img id="logo" src="./assets/logo.jpg"> 
+
+			   <!--  Menu of the navigation bar, constituted of the links to the other pages-->
+			   <ul class="menu"> 
+					   <li> <a href="home.html"> HOME </a> </li>
+					   <li> <a href="rooms.html"> ROOMS </a> </li>
+					   <li> <a href="booking.html"> BOOKING </a> </li>
+					   <li> <a href="restaurant.html"> RESTAURANT </a> </li>
+					   <li> <a href="about.html"> ABOUT </a> </li>
+					   <li> <a href="enquiry.html"> ENQUIRIES </a> </li>
+					   <li> <a href="feedbacks.html"> FEEDBACKS </a> </li>
+					   <li> <a href="contact.html"> CONTACT </a> </li>
+				   </ul>
+				   <br><br>
+				   <ul> 
+						<!-- Scolling bar to select -->
+					   <li class="roll"> ACCOUNT <img id="user" src="./assets/user.png">
+						   <!-- Options -->
+						   <ul class="options"> 
+							   <li id="log"> Log in </li>
+							   <li id="reg"> Register </li>
+						   </ul> 
+					   </li>
+				   </ul>
+			   </nav> 
+	   </header>
+	   
+		
+		<h1> Our rooms </h1>
+			  <!-- ************************************************************** standard room part **************************************************************-->
+
+			  <br><br>
+
+			  <div class="banner">
+      <div class="banner_room">
+        <img class="eco_room_banner" src="./assets/eco_room1.jpeg" alt="economy_room1">
+      </div>
+    </div>
+
+      <div class="booking_selection">
+        <form class="date" action="">
+          <label for="calendar">Check-in date : </label>
+          <input type="date" id="checkin" name="checkin">
+        </form>
+        <form class="date" action="">
+          <label for="calendar">Check-out date: </label>
+          <input type="date" id="checkout" name="checkout">
+        </form>
+        <form class="nb_adult" action="">
+          <label for="adult">Adults :</label>
+          <input type="number" id="adult" name="adult" step="1">
+        </form>
+        <form class="nb_kids" action="">
+          <label for="kids">Children :</label>
+          <input type="number" id="kids" name="kids" step="1">
+          <input type="submit">
+        </form>
+        </div>
+
+    <div class="room_info">
+
+    	<div class="room_intro">
+        	<h2>Standard Room N01 </h2>
+      	</div>
+
+    	<div class="eco_desc">
+			<div class="room_info_left">
+				<p>View: Center of the city </p>
+				<p>Size: 462 ft² / 43 m² </p>
+				<p>Bedding: 2 beds </p>
+				<p>Occupancy: up to 2 people</p>
+			</div>
+        	<div class="room_desc_right">
+				<p>If you're in search of an enjoyable time, come choose our standard room. This room offers enough space for you to spend quality time. We are honored of your presence
+				so we want to make sure to repay you your trust. Therefore, enjoy all the different amenities that we offer you. Find the following list of everything that
+				is at your disposition. </p>
+			</div>
+
+    	</div>
+
+		<div class="room_amenities">
+			<h3>Amenities: </h3>
+			<img src="./assets/standard.jpg" style=" width: 100%; height: 70%; border: 0; decoration : none;" alt="double_bed"> 
+			
+		</div>
+
+
+
+    </div>
+
+    <!-- ************************************************************** economy room part **************************************************************-->
+
+    <div class="banner_economy_room">
+      <div class="economy_room_pic_banner">
+        <img src="./assets/eco_room_banner.png" style="width:100%;" alt="king_bed">
+      </div>
+    </div>
+
+    <div class="booking_selection">
+      <form class="date" action="">
+        <label for="calendar">Check-in date : </label>
+        <input type="date" id="checkin" name="checkin">
+      </form>
+      <form class="date" action="">
+        <label for="calendar">Check-out date: </label>
+        <input type="date" id="checkout" name="checkout">
+      </form>
+      <form class="nb_adult" action="">
+        <label for="adult">Adults :</label>
+        <input type="number" id="adult" name="adult" step="1">
+      </form>
+      <form class="nb_kids" action="">
+        <label for="kids">Children :</label>
+        <input type="number" id="kids" name="kids" step="1">
+        <input type="submit">
+      </form>
+    </div>
+
+  <div class="room_info">
+
+    <div class="room_intro">
+      <h2>Economy Room N02 </h2>
+    </div>
+
+    <div class="eco_desc">
+
+      <div class="room_info_left">
+        <p>View: Center of the city </p>
+        <p>Size: 538 ft² / 50 m² </p>
+        <p>Bedding: 2 beds </p>
+        <p>Occupancy: up to 2 people</p>
+
+      </div>
+      <div class="room_desc_right">
+        <p>A modern and classy room.
+          Embodying the spirit of hospitality, the interior design is an
+          harmonious blend of modern elements. The bathing area features a spacious bathtub hewn from stone.
+           A graceful and tranquil space to return to after your serene and delightful city adventures.
+         </p>
+      </div>
+
+    </div>
+
+	<div class="room_amenities">
+		<h3>Amenities: </h3>
+		<img src="./assets/economy.jpg" style=" width: 100%; height: 70%; border: 0; decoration : none;" alt="double_bed"> 
+	</div>
+
+  </div>
+
+ <!-- ************************************************************** suite room part **************************************************************-->
+
+ <div class="banner_economy_room">
+   <div class="economy_room_pic_banner">
+     <img src="./assets/suite_home.jpeg" style="width:100%;height: 800px;" alt="king_bed">
+   </div>
+ </div>
+
+ <div class="booking_selection">
+   <form class="date" action="">
+     <label for="calendar">Check-in date : </label>
+     <input type="date" id="checkin" name="checkin">
+   </form>
+   <form class="date" action="">
+     <label for="calendar">Check-out date: </label>
+     <input type="date" id="checkout" name="checkout">
+   </form>
+   <form class="nb_adult" action="">
+     <label for="adult">Adults :</label>
+     <input type="number" id="adult" name="adult" step="1">
+   </form>
+   <form class="nb_kids" action="">
+     <label for="kids">Children :</label>
+     <input type="number" id="kids" name="kids" step="1">
+     <input type="submit">
+   </form>
+ </div>
+
+<div class="room_info">
+
+ <div class="room_intro">
+   <h2>Suite Room N03 </h2>
+ </div>
+
+ <div class="eco_desc">
+
+   <div class="room_info_left">
+     <p>View: Garden </p>
+     <p>Size: 1087–1194 ft² / 101–111m² </p>
+     <p>Bedding: 1 King </p>
+     <p>Occupancy: 3 </p>
+
+   </div>
+   <div class="room_desc_right">
+     <p>Measuring over 100m² and consisting of separate living room and bedroom areas,
+        the Suite room is the perfect place to enjoy the four seasons – the breathtaking beauty of nature in the spring,
+        in summer the garden is resplendently verdant,
+        the colors of autumn are so striking, and in winter the snowscape is a wonder to behold. </p>
+   </div>
+   </div>
+
+ </div>
+      <div class="room_amenities">
+        <h3>Amenities: </h3>
+		<img src="./assets/suite.jpg" style=" width: 100%; height: 70%; border: 0; decoration : none;" alt="double_bed">   
+	</div>
+	
+
+		<br><br>
+		   
+	   <br> <br> <br>
+    
+		<footer>
+			<!-- indicate our social medias, as the footer of each page -->
+			<br>
+			<p> <b> Follow us: </b> </p>
+			<br>
+
+			<!-- table listing the different social medias, taking the logos from the assets folder -->
+			<table class="socialm"> 
+				<tr> 
+					<td> <img id="fb" src="./assets/facebook.png">  </td>
+					<td id="fb"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="insta" src="./assets/instagram.png">  </td>
+					<td id="insta"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="in" src="./assets/LinkedIn.png">  </td>
+					<td id="in"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="snap" src="./assets/snapchat.png">  </td>
+					<td id="snap"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="tw" src="./assets/twitter.png"> </td>
+					<td id="tw"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="yt" src="./assets/youtube.png"> </td>
+					<td id="yt"> EMAhotel </td>
+				</tr>
+				<tr>
+					<td> <img id="tk" src="./assets/TikTok.png"> </td>
+					<td id="tk"> EMAhotel </td>
+				</tr>
+			</table>
+		</footer>
+	
+</body>
+</html>
